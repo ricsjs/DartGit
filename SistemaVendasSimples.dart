@@ -32,9 +32,7 @@ class Item {
   double quantidade;
   Produto produto;
   Item(double this.quantidade, Produto this.produto);
-  double total() {
-    return this.quantidade * this.produto.preco;
-  }
+  double total() => quantidade * produto.preco;
 }
 
 class Produto {
